@@ -2,8 +2,8 @@
 
 $host = "localhost:3306";
 $user = "root";
-$pass = "123";
-$database = "teste";
+$pass = "carlos93";
+$database = "id4299693_teste";
 
 $conexao = mysqli_connect($host, $user, $pass, $database) or die(mysqli_error($conexao));
 mysqli_select_db($conexao, $database) or die(mysqli_error($conexao));
