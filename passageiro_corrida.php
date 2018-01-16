@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <?php
 include "Conexao.php";
 $sql = mysqli_query($conexao, "select * from tb_passageiro;");
 ?>
-
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -46,7 +45,7 @@ $sql = mysqli_query($conexao, "select * from tb_passageiro;");
                         $dt_nascimento = $registro['dt_nascimento'];
                         $cpf = $registro['cpf'];
                         $sexo = $registro ['sexo'];
-
+                        
                         echo "<tr>";
                         echo "<td hidden> $id_passageiro </td>";
                         echo "<td> $nome </td>";

@@ -1,15 +1,13 @@
-<!DOCTYPE html>
 <?php
+ob_start();
 $id_passageiro = $_GET['id_passageiro'];
 session_start();
 $_SESSION['id_passageiro'] = $id_passageiro;
-
 include "Conexao.php";
-
 $sql = mysqli_query($conexao, "select * from tb_motorista "
         . "where stats = true;");
 ?>
-
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -68,7 +66,7 @@ $sql = mysqli_query($conexao, "select * from tb_motorista "
                         echo "<td> $modelo_carro </td>";
                         echo "<td> $stats  </td>";
                         echo "<td> $sexo  </td>";
-                        echo "<td><a href='corrida_adicionar.php?id_motorista=" . $id_motorista . "'>
+                        echo "<td><a href='corrida_adicionar.php?id_motorista=" . $id_motorista ."'>
                                 <input type='button' class='btn btn-danger' value='Escolher Motorista'></a></td>";
                         echo "</tr>";
                     }

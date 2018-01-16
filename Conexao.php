@@ -1,8 +1,8 @@
 <?php
 
-$host = "localhost:3306";
+$host = "Localhost";
 $user = "id4299693_root";
-$pass = "carlos93";
+$pass = "123456";
 $database = "id4299693_teste";
 
 $conexao = mysqli_connect($host, $user, $pass, $database) or die(mysqli_error($conexao));

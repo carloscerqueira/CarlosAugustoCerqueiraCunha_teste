@@ -1,9 +1,10 @@
-<!DOCTYPE html>
 <?php
+ob_start();
 $id_motorista = $_GET['id_motorista'];
 session_start();
 $_SESSION['id_motorista'] = $id_motorista;
 ?>
+<!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">

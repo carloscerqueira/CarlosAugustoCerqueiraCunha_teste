@@ -4,8 +4,8 @@ require_once "Conexao.php";
 //############# Caso o post seja ADD ##############//
 if (isset($_POST['add'])) {
 // Recebe os valores do POST
-    $id_passageiro = $_SESSION['id_passageiro'];
     $id_motorista = $_SESSION['id_motorista'];
+    $id_passageiro = $_SESSION['id_passageiro'];
     $valor = $_POST ['valor'];
 
 // Consulta para inserir passageiro
