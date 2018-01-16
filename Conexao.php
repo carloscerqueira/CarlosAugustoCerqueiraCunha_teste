@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost:3306";
-$user = "root";
+$user = "id4299693_root";
 $pass = "carlos93";
 $database = "id4299693_teste";
 
